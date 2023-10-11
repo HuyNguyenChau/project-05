@@ -902,6 +902,10 @@ button {
     font-weight: 400;
     opacity: 0.75;
 }
+.footer__link:hover {
+    text-shadow: 0 0 1px currentColor;
+    text-decoration: underline;
+}
 .footer__link-address {
     line-height: 1.667;
 }
