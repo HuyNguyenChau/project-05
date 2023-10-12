@@ -798,12 +798,16 @@ button {
     line-height: 1.71;
 }
 .information__item-title {
+    display: block;
     margin-top: 10px;
     color: #212832;
     font-family: "Open Sans";
     font-size: 1.8rem;
     font-weight: 600;
     line-height: 1.667;
+}
+.information__item-title:hover {
+    text-shadow: 0 0 1px currentColor;
 }
 .information__item-link {
     display: inline-block;
