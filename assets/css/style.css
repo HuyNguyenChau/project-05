@@ -790,6 +790,9 @@ button {
     height: 160px;
     object-fit: cover;
 }
+.information__item-content {
+    background-color: red;
+}
 .information__item-time {
     color: #696d76;
     font-family: "Open Sans";
