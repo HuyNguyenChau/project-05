@@ -289,7 +289,7 @@ button {
     display: flex;
     justify-content: center;
     width: 470px;
-    background-image: url(../assets/img/work-background.png);
+    background-image: url(../img/work-background.png);
     background-repeat: no-repeat;
     background-position: bottom center;
 }
@@ -542,7 +542,7 @@ button {
     display: flex;
     justify-content: center;
     width: 470px;
-    background-image: url(../assets/img/method-background.svg);
+    background-image: url(../img/method-background.svg);
     background-repeat: no-repeat;
     background-position: center bottom;
 }
