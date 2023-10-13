@@ -99,10 +99,13 @@ button {
     line-height: 1.75;
 }
 .navbar__link:hover {
-    text-shadow: 0 0 1px #212832;
+    text-shadow: 0 0 1px currentColor;
+}
+.navbar__link--active {
+    color: #212832;
+    font-weight: 600;
     text-decoration: underline solid #7264d6;
     text-underline-offset: 8px;
-    color: #212832;
 }
 /* -----Header-action----- */
 .header-action {
@@ -118,8 +121,6 @@ button {
 }
 .header-action-link:hover {
     text-shadow: 0 0 1px currentColor;
-    text-decoration: underline;
-    text-underline-offset: 6px;
 }
 /* ---------------------------------------------------------Hero----------------------------------------------------------- */
 .hero {
@@ -484,6 +485,9 @@ button {
     font-family: "Open Sans";
     font-size: 1.2rem;
     font-weight: 500;
+}
+.payments-decor__pay-top--money {
+    font-size: 1.6rem;
 }
 .payments-decor__pay-bottom {
     margin-top: 4px;
