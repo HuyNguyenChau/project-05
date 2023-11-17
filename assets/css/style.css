@@ -637,7 +637,7 @@ button {
 }
 .feedback__desc {
     margin: 18px auto 0;
-    width: 435px;
+    width: 37.17%;
     color: #696d76;
     font-family: "Open Sans";
     font-size: 1.6rem;
@@ -655,7 +655,7 @@ button {
 }
 .feedback__comment-wrap {
     position: relative;
-    width: 570px;
+    width: 100%;
     height: 252px;
     padding: 42px 28px;
     background-color: #fff;
@@ -882,7 +882,10 @@ button {
 .apps__app-btn {
     display: inline-block;
     margin: 38px 8px 0;
+    z-index: 1;
+    position: relative;
 }
+
 .apps__app-btn:hover {
     opacity: 0.8;
 }

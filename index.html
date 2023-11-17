@@ -8,6 +8,7 @@
         <!-- Link css -->
         <link rel="stylesheet" href="./assets/css/reset.css" />
         <link rel="stylesheet" href="./assets/css/style.css" />
+        <link rel="stylesheet" href="./assets/css/responsive.css" />
         <!-- Favicon -->
         <link
             rel="apple-touch-icon"
@@ -97,12 +98,87 @@
     </head>
     <body>
         <!-- ----------------------------------------------------Header---------------------------------------------------- -->
-        <header class="header" data-aos="fade-down">
+        <header class="header">
             <div class="container">
                 <div class="header__inner">
+                    <!-- Toggle Tablet -->
+                    <div class="toggle-menu">
+                        <!-- Menu-checkbox -->
+                        <input
+                            type="checkbox"
+                            name=""
+                            id="menu-checkbox"
+                            class="menu-checkbox"
+                            hidden
+                        />
+                        <label
+                            for="menu-checkbox"
+                            style="cursor: pointer"
+                            class="button-menu"
+                            ><svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                height="2em"
+                                viewBox="0 0 448 512"
+                            >
+                                <path
+                                    fill="#212832"
+                                    d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
+                                />
+                            </svg>
+                        </label>
+                        <!-- Menu-overplay -->
+                        <label
+                            for="menu-checkbox"
+                            class="menu-overplay"
+                        ></label>
+                        <!-- Menu-drawer -->
+                        <div class="menu-drawer">
+                            <label for="menu-checkbox" style="cursor: pointer"
+                                ><svg
+                                    class="menu-drawer-close"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    height="2.2em"
+                                    viewBox="0 0 384 512"
+                                >
+                                    <path
+                                        fill="currentColor"
+                                        d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"
+                                    />
+                                </svg>
+                            </label>
+                            <ul class="menu-drawer__list">
+                                <li class="menu-drawer__item">
+                                    <a
+                                        href="#!"
+                                        class="menu-drawer__link menu-drawer__link--active"
+                                        >Home</a
+                                    >
+                                </li>
+                                <li class="menu-drawer__item">
+                                    <a
+                                        href="#products"
+                                        class="menu-drawer__link"
+                                        >Products</a
+                                    >
+                                </li>
+                                <li class="menu-drawer__item">
+                                    <a
+                                        href="#features"
+                                        class="menu-drawer__link"
+                                        >Features</a
+                                    >
+                                </li>
+                                <li class="menu-drawer__item">
+                                    <a href="#blog" class="menu-drawer__link"
+                                        >Blog</a
+                                    >
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                     <!-- -----Logo----- -->
-                    <a href="#">
-                        <img src="./assets/icon/Logo.svg" alt="" class="logo" />
+                    <a href="#" class="logo">
+                        <img src="./assets/icon/Logo.svg" alt="" />
                     </a>
                     <!-- -----Navbar----- -->
                     <nav class="navbar">
@@ -142,7 +218,7 @@
             <div class="container">
                 <div class="hero__inner">
                     <!-- -----Hero content----- -->
-                    <section class="hero__content" data-aos="fade-right">
+                    <section class="hero__content">
                         <p class="section-label">Digital Smart Wallet</p>
                         <h1 class="section-heading hero__heading">
                             Digital
@@ -174,7 +250,7 @@
                         </p>
                     </section>
                     <!-- -----Hero media----- -->
-                    <div class="hero__media" data-aos="fade-left">
+                    <div class="hero__media">
                         <!-- Ảnh lớn -->
                         <div class="hero__img-wrap">
                             <img
@@ -473,6 +549,49 @@
                         </ul>
                         <button class="btn method-btn">Get Started</button>
                     </section>
+                    <!-- Method-decor Only-Mobile -->
+                    <div class="method-decor only-mobile">
+                        <p class="method-decor__choose">
+                            Choose payment method:
+                        </p>
+                        <div class="method-decor__inner">
+                            <img
+                                src="./assets/img/method-decor-3.svg"
+                                alt=""
+                                class="method-decor__img"
+                            />
+                            <img
+                                src="./assets/img/method-decor-1.svg"
+                                alt=""
+                                class="method-decor__img"
+                            />
+                            <img
+                                src="./assets/img/method-decor-5.svg"
+                                alt=""
+                                class="method-decor__img"
+                            />
+                            <img
+                                src="./assets/img/method-decor-4.svg"
+                                alt=""
+                                class="method-decor__img"
+                            />
+                            <img
+                                src="./assets/img/method-decor-2.svg"
+                                alt=""
+                                class="method-decor__img"
+                            />
+                            <img
+                                src="./assets/img/method-decor-6.svg"
+                                alt=""
+                                class="method-decor__img"
+                            />
+                        </div>
+                        <img
+                            src="./assets/img/method-decor-small.svg"
+                            alt=""
+                            class="method-decor__img-small"
+                        />
+                    </div>
                 </div>
             </div>
         </section>
@@ -785,8 +904,12 @@
                     </section>
                 </div>
                 <div class="footer__info">
-                    <a href="#!" class="footer-email">email@gmail.com</a>
-                    <a href="#!" class="footer-phone">(123) 456-7890</a>
+                    <a href="mailto:email@email.com" class="footer-email"
+                        >email@gmail.com</a
+                    >
+                    <a href="tel:1234567890" class="footer-phone"
+                        >(123) 456-7890</a
+                    >
                 </div>
             </div>
             <div class="footer-end">
@@ -796,9 +919,5 @@
             </div>
         </footer>
         <!-- ---------------------------------------------------Script animation------------------------------------------- -->
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-        <script>
-            AOS.init();
-        </script>
     </body>
 </html>
